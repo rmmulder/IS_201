@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgGrad)"/>
+  <!-- soft overlapping accents -->
+  <g fill="url(#accent)">
+    <ellipse cx="300" cy="180" rx="260" ry="140"/>
+    <ellipse cx="1200" cy="700" rx="360" ry="200"/>
+  </g>
+  <!-- subtle office window silhouette -->
+  <g transform="translate(80,60)" fill="#ffffff" opacity="0.03">
+    <rect x="0" y="0" width="420" height="720" rx="12"/>
+    <rect x="24" y="24" width="372" height="40" rx="6"/>
+    <rect x="24" y="84" width="372" height="28" rx="6"/>
+  </g>
+  <!-- line chart motif -->
+  <g transform="translate(320,260)">
+    <rect x="0" y="0" width="920" height="380" rx="12" fill="#fff" opacity="0.02"/>
+    <!-- axes -->
+    <line x1="40" y1="340" x2="880" y2="340" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+    <line x1="40" y1="20" x2="40" y2="340" stroke="#ffffff" stroke-opacity="0.06" stroke-width="2"/>
+    <!-- grid lines -->
+    <g stroke="#ffffff" stroke-opacity="0.03">
+      <line x1="40" y1="260" x2="880" y2="260"/>
+      <line x1="40" y1="180" x2="880" y2="180"/>
+      <line x1="40" y1="100" x2="880" y2="100"/>
+    </g>
+    <!-- data line -->
+    <polyline points="40,300 160,240 300,260 420,160 560,200 700,120 840,140" fill="none" stroke="#60a5fa" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- markers -->
+    <g fill="#60a5fa">
+      <circle cx="40" cy="300" r="6"/>
+      <circle cx="160" cy="240" r="6"/>
+      <circle cx="300" cy="260" r="6"/>
+      <circle cx="420" cy="160" r="6"/>
+      <circle cx="560" cy="200" r="6"/>
+      <circle cx="700" cy="120" r="6"/>
+      <circle cx="840" cy="140" r="6"/>
+    </g>
+  </g>
+</svg>

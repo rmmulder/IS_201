@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="eduBg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#07203f"/>
+      <stop offset="100%" stop-color="#0b3c5d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#eduBg)"/>
+  <!-- books stack + graduation cap -->
+  <g transform="translate(220,240)" fill="#ffffff" opacity="0.06">
+    <rect x="0" y="200" width="420" height="48" rx="6"/>
+    <rect x="10" y="148" width="400" height="48" rx="6"/>
+    <rect x="20" y="96" width="380" height="48" rx="6"/>
+    <rect x="30" y="44" width="360" height="48" rx="6"/>
+  </g>
+  <g transform="translate(880,280)">
+    <!-- small stacked bar / chart to complement education theme -->
+    <rect x="0" y="160" width="360" height="220" rx="8" fill="#fff" opacity="0.02"/>
+    <rect x="24" y="100" width="44" height="280" fill="#60a5fa"/>
+    <rect x="84" y="140" width="44" height="240" fill="#38bdf8"/>
+    <rect x="144" y="40" width="44" height="340" fill="#22c55e"/>
+    <rect x="204" y="180" width="44" height="200" fill="#7c3aed"/>
+  </g>
+</svg>
