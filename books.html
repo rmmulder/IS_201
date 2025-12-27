@@ -6,6 +6,19 @@
     <title>Books — Richard Mulder</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link href="css/books.css" rel="stylesheet" />
+    <style>
+    /* Conquest hero video background */
+    .conquest-hero{position:relative;height:300px;overflow:hidden;border-radius:6px;margin-bottom:18px;background:#000;color:#fff}
+    .conquest-hero .hero-video{position:absolute;inset:0;overflow:hidden;z-index:0}
+    .conquest-hero .hero-video iframe{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:177.78%;height:100%;min-width:1200px;border:0}
+    .conquest-hero .hero-overlay{position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.65));z-index:1}
+    .conquest-hero .hero-content{position:relative;z-index:2;max-width:1100px;margin:0 auto;padding:28px;color:#fff}
+    @media(max-width:700px){
+      .conquest-hero{height:200px}
+      .conquest-hero .hero-video{display:none}
+      .conquest-hero .hero-content{padding:18px}
+    }
+    </style>
   </head>
   <body>
     <nav class="nav-bar" style="padding:12px 18px;">
@@ -95,9 +108,17 @@
         </script>
       </div>
 
-      <section class="conquest-saga" style="margin:36px 0;padding:18px;border-radius:6px;background:#fffaf0;">
-        <h2>Conquest Saga — Fiction</h2>
-        <p class="lead">The Conquest Saga is an epic GameLit series blending fast‑paced action, moral complexity, and immersive worldbuilding. The novels follow protagonists who face escalating challenges across richly detailed realms, combining tactical combat with character‑driven storytelling.</p>
+      <section class="conquest-saga" style="margin:36px 0;padding:0;border-radius:6px;background:#fffaf0;overflow:hidden;">
+        <div class="conquest-hero">
+          <div class="hero-video" aria-hidden="true">
+            <iframe src="https://www.youtube-nocookie.com/embed/BSTHB1-x8EI?autoplay=1&mute=1&loop=1&controls=0&playlist=BSTHB1-x8EI&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" style="width:100%;height:100%;"></iframe>
+          </div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h2>Conquest Saga — Fiction</h2>
+            <p class="lead">The Conquest Saga is an epic GameLit series blending fast‑paced action, moral complexity, and immersive worldbuilding. The novels follow protagonists who face escalating challenges across richly detailed realms, combining tactical combat with character‑driven storytelling.</p>
+          </div>
+        </div>
 
         <div class="author-bio" style="display:flex;gap:18px;align-items:flex-start;margin-top:12px;">
           <div style="flex:1;min-width:220px;">
